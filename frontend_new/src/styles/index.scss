@@ -1,0 +1,56 @@
+@import "./fonts.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: sans-serif;
+
+  @apply font-montserrat transition-all duration-200;
+}
+
+body {
+  @apply bg-black-base text-white-base italic;
+}
+
+input {
+  font-family: "Roboto";
+
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-gobold italic font-bold;
+}
+
+h1 {
+  @apply text-8xl;
+}
+
+h2 {
+  @apply text-5xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  @apply leading-1.5 font-medium text-xl;
+  letter-spacing: -0.175px;
+}
+
+.container {
+  @apply max-w-360 w-full box-border mx-auto overflow-hidden default:px-4 md:px-8 lg:px-25;
+}
